@@ -1,7 +1,8 @@
-import { combineReducers } from 'redux'
+import { combineReducers } from "redux";
+import { pokemonsSlice } from "./pokemonsSlice";
 
 const rootReducers = combineReducers({
-  // Agregar aca los reducers
-})
+  pokemons: pokemonsSlice.reducer
+});
 
-export default rootReducers
+export default rootReducers;
